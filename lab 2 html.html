@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <title>my lab</title>
+    <style>
+        #colors {
+            margin-left: 150px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        
+        table {
+            width: 50%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>table</h1>
+        <table>
+            <tr>
+                <th colspan="2">web site bage</th>
+                <th colspan="2" rowspan="2">describe</th>
+            </tr>
+            <tr>
+                <th><a href="lab 1 html.html">home</a></th>
+                <th><a href="lab 1 html.html" target="blank">search</a></th>
+            </tr>
+            <tr bgcolor="green">
+                <th colspan="4">all data is here</th>
+            </tr>
+            <tr>
+                <th rowspan="2">list</th>
+                <th colspan="2">content 1</th>
+            </tr>
+            <tr>
+                <th colspan="2">content 2</th>
+            </tr>
+
+        </table>
+    </div>
+    <hr>
+    <div>
+        <h1 id="form">form</h1>
+        <div class="form">
+            <form class="form" method="GET" action="lab 3 html css.html">
+                <label for="name"> Name :</label> <input type="text" id="name" name="name" value="name">
+                <label for="password"> password :</label> <input type="password" id="password" name="password" value="password"><br><br>
+                <label for="gander" style="top: 3;"> gander :</label><br>
+                <input type="radio" id="gander" name="gander" value="male"> <label for="male">male</label><br>
+                <input type="radio" id="gander" name="gander" value="female" style="left: 5;"> <label for="female">female</label>
+                <label for="colors" id="colors">Choose a color:</label>
+                <select id="color" name="color">
+              <option value="red">red</option>
+              <option value="green">green</option>
+              <option value="blue">blue</option>
+              <option value="black">black</option>
+            </select><br><br>
+                <input type="submit" class="form">
+
+            </form>
+        </div>
+    </div>
+</body>
